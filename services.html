@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Bookkeeping & Payroll Corp</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo-placeholder.jpg" alt="logo" class="logo" />
+        <div>
+          <h1>Bookkeeping & Payroll Corp</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav" id="mainNav2">
+        <button id="navToggle2" class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="services-listing">
+      <h2>Our Services</h2>
+
+      <div class="controls">
+        <input id="serviceSearch" placeholder="Search services (e.g., payroll, SARS, ledger)" />
+        <button id="clearSearch" class="btn btn-outline">Clear</button>
+      </div>
+
+      <div id="servicesList" class="services-cards">
+        <!-- Services will be injected by JS -->
+      </div>
+    </section>
+
+    <aside class="quick-contact">
+      <h3>Get a Quick Quote</h3>
+      <form id="quoteForm" class="card small">
+        <input type="text" id="qName" placeholder="Your name" required />
+        <input type="email" id="qEmail" placeholder="Email" required/>
+        <input type="tel" id="qPhone" placeholder="Phone" />
+        <select id="qService">
+          <option value="bookkeeping">Bookkeeping</option>
+          <option value="payroll">Payroll</option>
+          <option value="both">Both</option>
+        </select>
+        <textarea id="qMessage" placeholder="A quick note (optional)"></textarea>
+        <button class="btn" type="submit">Request Quote</button>
+        <p class="muted small">This demo stores the quote locally in your browser (no backend).</p>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>Bookkeeping & Payroll Corp</h4>
+        <p>No 5 Gqunube Street, Kwezi Extension, Mthatha</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Bookkeeping & Payroll Corp</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo-placeholder.jpg" alt="logo" class="logo" />
+        <div>
+          <h1>Bookkeeping & Payroll Corp</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button id="navToggle3" class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Address: No 5 Gqunube Street, Kwezi Extension, Mthatha, 5099</p>
+      <p>Phone: <a href="tel:0721360861">072 136 0861</a> • <a href="tel:0473230861">047 323 0861</a></p>
+      <p>Email: <a href="mailto:jokazisiphesihle@email.com">bookkeepers@email.com</a></p>
+      <div class="map-placeholder">Map Placeholder (add embed or map later)</div>
+    </section>
+
+    <section class="contact-form">
+      <h3>Send a Message</h3>
+      <form id="contactForm" class="card">
+        <label>Full name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" required />
+        <label>Business name</label>
+        <input type="text" id="businessName" placeholder="Enter business name" />
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <label>Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone" />
+        <label>Service inquiry</label>
+        <select id="serviceType">
+          <option>Bookkeeping</option>
+          <option>Payroll</option>
+          <option>Both</option>
+        </select>
+        <label>Message</label>
+        <textarea id="message" placeholder="Describe your needs"></textarea>
+
+        <label>Attach (optional)</label>
+        <input type="file" id="attachFile" accept="image/*" />
+        <div id="preview" class="file-preview">No file chosen</div>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p class="muted small">Messages are validated and saved locally for demo purposes.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>Bookkeeping & Payroll Corp</h4>
+        <p>No 5 Gqunube Street, Kwezi Extension, Mthatha</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
